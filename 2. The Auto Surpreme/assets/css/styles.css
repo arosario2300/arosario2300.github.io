@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  line-height: 1.5em;
+}
+
+.wrapper {
+  position: relative;
+  min-height: 100vh;
+}
+
+.bg-gradient {
+  background-color: whitesmoke;
+  background-image: linear-gradient(whitesmoke, white, whitesmoke);
+}
+
+/* ----------------- Nav ----------------- */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: lightgrey;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  width: 60%;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.contactBTN {
+  margin-right: 10%;
+}
+
+.contactBTN button {
+  padding: 10px 20px;
+  letter-spacing: 3px;
+  font-size: inherit;
+  font-weight: inherit;
+  border-radius: 50px;
+  border: none;
+  background-color: #f9f1df;
+}
+
+.selected {
+  border-bottom: 2px solid black;
+}
+
+/* ----------------- Footer ----------------- */
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  bottom: 0;
+  width: 100%;
+  height: -2.5rem;
+  padding: 10px 30px 10px 30px;
+  background-color: lightgray;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links {
+  display: flex;
+}
+
+.social-links a {
+  margin: 0 5px;
+}
+
+#time {
+  justify-self: end;
+}
+
+/* ---------------------------------- INDEX.HTML ---------------------------------- */
+
+/* ----------------- Hero ----------------- */
+
+.hero {
+  background-image: url(../../img/main.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+}
+
+/* ----------------- Container Top ----------------- */
+.container-top h1 {
+  font-size: 3.5em;
+  margin-bottom: 10px;
+}
+
+.container-top p {
+  font-size: 2em;
+  margin-bottom: 30px;
+}
+
+.container-top {
+  padding-top: 50px;
+  text-align: center;
+}
+
+.img-style {
+  width: 889px;
+  margin: auto;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 black;
+  background-color: #f9f1df;
+}
+
+.img-style p {
+  font-size: 1.2em;
+}
+
+/* ----------------- Container Bottom ----------------- */
+.container-bottom {
+  margin-top: 50px;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
+.container-bottom h1 {
+  font-size: 3em;
+}
+
+.container-bottom p {
+  margin-bottom: 60px;
+}
+
+.container-bottom ul {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  grid-template-rows: 1fr;
+  justify-items: center;
+  grid-row-gap: 30px;
+  list-style: none;
+}
+
+.container-bottom ul li {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 2em;
+  font-weight: 500;
+  box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 black;
+  width: 400px;
+  height: 400px;
+}
+
+.item1 {
+  background-image: url(../../img/repairs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item2 {
+  background-image: url(../../img/finance.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item3 {
+  background-image: url(../../img/services.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item4 {
+  background-image: url(../../img/insurance.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* ---------------------------------- ABOUT.HTML ---------------------------------- */
+
+.about-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  align-items: center;
+  margin: 0 100px;
+  text-align: center;
+  font-size: 1.5em;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container div h1 {
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+
+.container p {
+  text-align: right;
+  align-self: center;
+  padding: 30px;
+}
+
+.container p, .container img {
+  box-shadow: 0.5px 0.5px 20px black;
+}
+
+/* ---------------------------------- SALESMAN.HTML ---------------------------------- */
+
+/* ----------------- Container Top ----------------- */
+hr {
+  width: 90%;
+  margin: 20px auto;
+  background-color: lightgray;
+}
+
+.salesman-title {
+  padding: 50px 0;
+  font-size: 3em;
+  letter-spacing: 3px;
+  font-family: "Raleway";
+  text-align: center;
+}
+
+.salesman-container-top {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+  justify-items: start;
+  padding: 0 50px 50px 50px;
+}
+
+.salesman-container-top p {
+  padding: 15px;
+  font-size: 2em;
+  font-family: "Raleway";
+  font-weight: 200;
+  text-align: end;
+  background-color: #f9f1df;
+  box-shadow: 0.5px 0.5px 20px black;
+}
+
+.salesman-container-top img {
+  box-shadow: 0.5px 0.5px 20px black;
+  align-self: center;
+}
+
+/* ----------------- Container Bottom ----------------- */
+.salesman-container-bottom {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  justify-items: end;
+  padding: 50px;
+}
+
+.salesman-container-bottom p {
+  padding: 15px;
+  font-size: 2em;
+  font-family: "Raleway";
+  font-weight: 200;
+  text-align: start;
+  background-color: #f9f1df;
+  box-shadow: 0.5px 0.5px 20px black;
+}
+
+.salesman-container-bottom img {
+  box-shadow: 0.5px 0.5px 20px black;
+  align-self: center;
+}
+
+/* ---------------------------------- CONTACT.HTML ---------------------------------- */
+
+.contact-wrapper {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.contact-wrapper h1 {
+  font-size: 3em;
+}
+
+.contact-wrapper p {
+  width: 650;
+}
+
+.contact-container {
+  text-align: center;
+  width: 750px;
+}
+
+.contact-container h1 {
+  margin-bottom: 30px;
+  letter-spacing: 3px;
+}
+
+.contact-container p {
+  line-height: 1.5em;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 30px;
+  height: 800px;
+  background-color: #f9f1df;
+  border: 1px solid black;
+}
+
+.form-container h2 {
+  font-size: 2.3em;
+  letter-spacing: 3px;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.2em;
+}
+
+.form-container textarea {
+  height: 300px;
+  width: 600px;
+  border: 1px solid #ccc;
+  resize: none;
+  padding: 12px 20px;
+  font-size: 0.6em;
+}
+
+#fname, #lname, #email {
+  height: 30px;
+  width: 50%;
+}
+
+.form-container button {
+  width: 100px;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 12px;
+  background-color: rgb(226, 226, 226);
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+/* ---------------------------------- INVENTORY.HTML ---------------------------------- */
+
+.stock-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stock-wrapper h1 {
+  align-self: flex-start;
+  margin: 50px 0 0 20px;
+  letter-spacing: 3px;
+  font-size: 2.5em;
+}
+
+.stock-wrapper p {
+  align-self: flex-start;
+  margin: 0 0 20px 20px;
+  max-width: 65%;
+}
+
+.stock-container {
+  display: grid;
+  gap: 50px 100px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 0 50px 50px 50px;
+  margin-top: 30px;
+}
+
+.stock-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0.5px 0.5px 20px black;
+  font-size: 2em;
+  font-weight: 500;
+  font-family: "Raleway";
+  letter-spacing: 3px;
+  background-color: #f9f1df;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* ---------------------------------- Car Pages ---------------------------------- */
+
+.car-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.car-wrapper h1 {
+  font-size: 4em;
+  letter-spacing: 3px;
+  margin-top: 50px;
+}
+
+.car-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  width: 80%;
+  min-width: 1200px;
+  box-shadow: 0.5px 0.5px 20px black;
+}
+
+.car-container img {
+  width: 800px;
+  max-height: 800px;
+  margin-bottom: 20px;
+}
+
+.car-container p {
+  font-size: 1.3em;
+  max-width: 1000px;
+}
