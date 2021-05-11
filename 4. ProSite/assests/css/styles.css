@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Roboto:wght@300;400;500&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+
+html, body {
+  height: 100%;
+  overflow: hidden;
+}
+
+a {
+  color: white;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1.5fr;
+  height: 100vh;
+  background-image: url(lib/img/main6.jpeg);
+  background-position: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content {
+  padding: 0 50px;
+  color: white;
+  align-content: center;
+  display: grid;
+  font-family: 'Cinzel', serif;
+}
+
+.main-content h1 {
+  font-size: 3em;
+}
+
+.main-content h3 i {
+  margin: 0 3px;
+}
+
+.main-content p {
+  line-height: 2em;
+  font-size: 1.1em;
+}
+
+.main-par {
+  margin: 100px 0;
+}
+
+/* ---------------- NAV ---------------- */
+nav {
+  background-color: black;
+  padding: 15px 10px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+ul a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-content {
+  text-align: center;
+  overflow: auto;
+  height: auto;
+  background-image: url(lib/img/side1.jpeg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Cinzel', serif;
+}
+
+.projects {
+  margin-top: 20px;
+  height: auto;
+  display: grid;
+  justify-items: center;
+}
+
+.projects img {
+  margin: 20px 0;
+  box-shadow: 1px 1px 18px 1px black;
+}
+
+.selected {
+  border-bottom: 1px solid white;
+}
